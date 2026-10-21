@@ -4,8 +4,8 @@ export const projects: readonly Project[] = [
   {
     id: "proj-portfolio",
     name: {
-      pt: "my-expedition",
-      en: "my-expedition",
+      pt: "expedition",
+      en: "expedition",
     },
     iconKind: "expedition-33",
     iconLabel: "33",
@@ -28,7 +28,7 @@ export const projects: readonly Project[] = [
       "Cloudflare",
       "Illustrator",
     ],
-    links: [{ kind: "github", url: "https://github.com/Kaironn2/my-expedition" }],
+    links: [{ kind: "github", url: "https://github.com/Kaironn2/expedition" }],
   },
   {
     id: "proj-icosa",
