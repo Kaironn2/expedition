@@ -6,21 +6,8 @@ import { useReducedMotion } from "@/hooks/useReducedMotion";
 const HOVER_TARGETS = "button, a, [role='button'], input, textarea, select, label, [data-hover]";
 const POINTER_QUERY = "(hover: hover) and (pointer: fine)";
 const OFFSCREEN_POSITION = { x: -100, y: -100 };
-const SCROLLBAR_EDGE_TOLERANCE = 2;
 
 let lastPointerPosition: { x: number; y: number } | null = null;
-
-function isScrollbarEdge(event: PointerEvent): boolean {
-  const viewportWidth = document.documentElement.clientWidth;
-
-  return (
-    window.innerWidth > viewportWidth &&
-    event.clientX >= viewportWidth - SCROLLBAR_EDGE_TOLERANCE &&
-    event.clientX <= window.innerWidth + SCROLLBAR_EDGE_TOLERANCE &&
-    event.clientY >= 0 &&
-    event.clientY <= window.innerHeight
-  );
-}
 
 export function CustomCursor() {
   const dotRef = useRef<HTMLDivElement | null>(null);
@@ -72,8 +59,7 @@ export function CustomCursor() {
       ringRef.current?.classList.toggle("is-hover", Boolean(target?.closest(HOVER_TARGETS)));
     }
 
-    function hideCursor(event: PointerEvent) {
-      if (isScrollbarEdge(event)) return;
+    function hideCursor() {
       setVisible(false);
     }
 
