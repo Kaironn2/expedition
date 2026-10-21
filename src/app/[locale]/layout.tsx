@@ -9,6 +9,7 @@ import { fontDisplay, fontMono, fontSans, fontSerif } from "@/app/fonts";
 import "@/app/globals.css";
 import { BackgroundFlares } from "@/components/background/BackgroundFlares";
 import { CustomCursor } from "@/components/background/CustomCursor";
+import { CustomScrollbar } from "@/components/background/CustomScrollbar";
 import { PetalsBackground } from "@/components/background/PetalsBackground";
 import { routing } from "@/i18n/routing";
 
@@ -59,6 +60,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <BackgroundFlares />
         <PetalsBackground />
         <CustomCursor />
+        <CustomScrollbar />
         {children}
         <Analytics />
         <SpeedInsights />

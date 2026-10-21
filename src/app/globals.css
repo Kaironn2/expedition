@@ -48,6 +48,50 @@ html {
   background: #0f0c0a;
 }
 
+/*
+ * The native scrollbar is painted outside the DOM: it ignores `cursor: none` and covers
+ * the custom cursor. Where the custom cursor runs, it is replaced by a DOM scrollbar
+ * with the same look. Keep this query in sync with CustomCursor/CustomScrollbar.
+ */
+.k-scrollbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9998;
+  width: 10px;
+  background: linear-gradient(180deg, rgb(201 169 110 / 5%), transparent 30%), #0f0c0a;
+  touch-action: none;
+}
+
+.k-scrollbar-thumb {
+  width: 100%;
+  border: 2px solid #0f0c0a;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #9a8050, #5e4a2a);
+  will-change: transform;
+}
+
+.k-scrollbar-thumb:hover,
+.k-scrollbar.is-dragging .k-scrollbar-thumb {
+  background: linear-gradient(180deg, #c9a96e, #7d6337);
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html {
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
+  .k-scrollbar.is-scrollable {
+    display: block;
+  }
+}
+
 body {
   min-height: 100vh;
   overflow-x: hidden;
