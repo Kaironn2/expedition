@@ -1,1 +1,1 @@
-# My Expedition
+# Expedition
