@@ -26,8 +26,31 @@
     "num": "III.",
     "title": "Habilidades",
     "caption": "Arsenal",
-    "legend": "Nível de familiaridade - 1 a 100",
-    "levelLabel": "Nível de familiaridade"
+    "legend": "Escala de domínio",
+    "tiers": {
+      "1": "Aprendiz",
+      "2": "Praticante",
+      "3": "Expedicionário",
+      "4": "Artífice"
+    },
+    "tierLabel": "Nível {tier} de 4",
+    "kinds": {
+      "prod": "Produção",
+      "proj": "Projeto",
+      "study": "Estudo"
+    },
+    "noTime": "Tempo de uso não registrado",
+    "keyTime": "Tempo de uso",
+    "keyCount": "Locais de trabalho e projetos onde usei",
+    "keyHint": "Passe o mouse para ver detalhes · clique para fixar",
+    "keySample": "1a 2m",
+    "shortYears": "{count}a",
+    "shortMonths": "{count}m",
+    "shortLessThanMonth": "<1m",
+    "longYears": "{count, plural, one {# ano} other {# anos}}",
+    "longMonths": "{count, plural, one {# mês} other {# meses}}",
+    "longLessThanMonth": "menos de 1 mês",
+    "and": "e"
   },
   "about": {
     "num": "I.",

@@ -26,8 +26,31 @@
     "num": "III.",
     "title": "Skills",
     "caption": "Arsenal",
-    "legend": "Familiarity level - 1 to 100",
-    "levelLabel": "Familiarity level"
+    "legend": "Mastery scale",
+    "tiers": {
+      "1": "Apprentice",
+      "2": "Practitioner",
+      "3": "Expeditioner",
+      "4": "Artificer"
+    },
+    "tierLabel": "Tier {tier} of 4",
+    "kinds": {
+      "prod": "Production",
+      "proj": "Project",
+      "study": "Study"
+    },
+    "noTime": "Time in use not tracked",
+    "keyTime": "Time in use",
+    "keyCount": "Workplaces and projects where I used it",
+    "keyHint": "Hover for details · click to pin",
+    "keySample": "1y 2m",
+    "shortYears": "{count}y",
+    "shortMonths": "{count}m",
+    "shortLessThanMonth": "<1m",
+    "longYears": "{count, plural, one {# year} other {# years}}",
+    "longMonths": "{count, plural, one {# month} other {# months}}",
+    "longLessThanMonth": "less than a month",
+    "and": "and"
   },
   "about": {
     "num": "I.",
