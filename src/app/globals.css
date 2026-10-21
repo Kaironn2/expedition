@@ -1274,28 +1274,57 @@ button:focus-visible {
   pointer-events: auto;
   visibility: visible;
   transform: none;
-  clip-path: inset(-12px -2px -2px -2px);
+  clip-path: inset(-12px -12px -12px -12px);
   transition-delay: 0s;
 }
 
-.k-skill-hint::before {
-  position: absolute;
-  top: 0;
-  right: 16px;
-  left: 16px;
-  height: 1px;
-  content: "";
-  background: linear-gradient(90deg, transparent, #e9d3a0, transparent);
-  transform: scaleX(0);
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+@property --k-hint-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
 }
 
-.k-skill-row.is-open .k-skill-hint::before {
-  transform: scaleX(1);
+@keyframes k-hint-border-spin {
+  to {
+    --k-hint-angle: 360deg;
+  }
+}
+
+.k-skill-hint::after {
+  position: absolute;
+  inset: -2px;
+  z-index: 1;
+  padding: 2px;
+  pointer-events: none;
+  content: "";
+  background: conic-gradient(
+    from var(--k-hint-angle),
+    transparent 0deg,
+    rgb(233 211 160) 40deg,
+    transparent 90deg,
+    transparent 180deg,
+    rgb(201 169 110 / 85%) 220deg,
+    transparent 270deg
+  );
+  filter: drop-shadow(0 0 6px rgb(233 211 160 / 70%));
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+  animation: k-hint-border-spin 4s linear infinite;
+  animation-play-state: paused;
+}
+
+.k-skill-row.is-open .k-skill-hint::after {
+  animation-play-state: running;
 }
 
 .k-skill-hint-caret {
   position: absolute;
+  z-index: 2;
   top: -6px;
   right: 14px;
   width: 10px;
@@ -1469,6 +1498,10 @@ button:focus-visible {
     clip-path: none !important;
     transform: none !important;
     transition: opacity 0.2s ease !important;
+  }
+
+  .k-skill-hint::after {
+    animation: none;
   }
 }
 
