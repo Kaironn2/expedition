@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Kaironn - Jonathas Oliveira",
+    "description": "Portfólio de Jonathas Oliveira - engenheiro de software."
+  },
+  "nav": {
+    "about": "Sobre",
+    "experience": "Carreira",
+    "skills": "Habilidades",
+    "certifications": "Certificações",
+    "projects": "Projetos",
+    "courses": "Cursos",
+    "academic": "Formação",
+    "contact": "Contato"
+  },
+  "career": {
+    "num": "II.",
+    "title": "Carreira",
+    "caption": "Trilha de combate",
+    "current": "ATUAL",
+    "showMore": "Ver mais",
+    "showLess": "Ver menos",
+    "level": "Nível"
+  },
+  "skills": {
+    "num": "III.",
+    "title": "Habilidades",
+    "caption": "Arsenal",
+    "legend": "Nível de familiaridade - 1 a 100",
+    "levelLabel": "Nível de familiaridade"
+  },
+  "about": {
+    "num": "I.",
+    "title": "Sobre",
+    "caption": "Perfil de campo",
+    "locationLabel": "Base",
+    "statusLabel": "Status",
+    "statusValue": "Full-stack com base forte em dados, automação e performance. Explorando algumas alternativas com IA e curioso sobre arquitetura e system design.",
+    "stackLabel": "Skills",
+    "stackItems": [
+      "Python",
+      "Sistemas distribuídos",
+      "Extração de dados",
+      "Scrapy",
+      "FastAPI",
+      "Django",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Docker",
+      "SQL"
+    ]
+  },
+  "projects": {
+    "num": "IV.",
+    "title": "Projetos",
+    "caption": "Artefatos em produção",
+    "intro": "Uma seleção de builds públicos e peças de produto que mostram como organizo interfaces, dados e experiência para seguir evoluindo depois do primeiro deploy.",
+    "featured": "Destaque",
+    "repository": "Repositório",
+    "live": "Live",
+    "stack": "Stack",
+    "status": "Status",
+    "year": "Ano",
+    "noteTitle": "Registro privado",
+    "noteBody": "Parte do trabalho em produção fica em repositórios privados. Esta section foi preparada para receber novas entregas sem alterar a estrutura visual.",
+    "flipHintHover": "hover",
+    "flipHintTap": "toque"
+  },
+  "certificationsSection": {
+    "num": "VI.",
+    "title": "Certificações",
+    "caption": "Próximos registros",
+    "comingSoon": "Coming soon"
+  },
+  "courses": {
+    "num": "VII.",
+    "title": "Cursos",
+    "caption": "Treinamentos e estudos",
+    "comingSoon": "Coming soon"
+  },
+  "academic": {
+    "num": "V.",
+    "title": "Formação",
+    "caption": "Academia",
+    "progressLabel": "Progresso",
+    "statusInProgress": "Em curso",
+    "statusCompleted": "Concluído",
+    "monthsShort": [
+      "Jan",
+      "Fev",
+      "Mar",
+      "Abr",
+      "Mai",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Set",
+      "Out",
+      "Nov",
+      "Dez"
+    ]
+  },
+  "hero": {
+    "expeditionLabel": "EXPEDIÇÃO",
+    "titleFirst": "Jonathas",
+    "titleLast": "Oliveira",
+    "alias": "Kaironn",
+    "subtitleLead": "Desenvolvendo soluções ",
+    "subtitleHighlight": "por aqueles que ainda virão",
+    "rotating": {
+      "one": "Minerando alguns dados...",
+      "two": "Codando algumas letrinhas...",
+      "three": "Construindo algo divertido...",
+      "four": "Traduzindo algumas coisas...",
+      "five": "Jogando souls like... Ué? Volta...",
+      "six": "Rolando 1d20... FALHA CRÍTICA??",
+      "seven": "Rolando 1d20... CRÍTICO!!",
+      "eight": "O amanhã se aproxima..."
+    },
+    "cta": "Ver projetos",
+    "contactCta": "Iniciar diálogo",
+    "statJourneyLabel": "Tempo de jornada",
+    "statJourneyValue": "2+ anos",
+    "statProjectsLabel": "Projetos em produção",
+    "statProjectsValue": "2",
+    "statStackLabel": "Stack atual",
+    "statStackValue": "Python - TypeScript"
+  },
+  "language": {
+    "toggle": "Mudar idioma",
+    "pt": "Português",
+    "en": "English"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  }
+}

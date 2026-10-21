@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Kaironn - Jonathas Oliveira",
+    "description": "Portfolio of Jonathas Oliveira - software engineer."
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Career",
+    "skills": "Skills",
+    "certifications": "Certifications",
+    "projects": "Projects",
+    "courses": "Courses",
+    "academic": "Academic",
+    "contact": "Contact"
+  },
+  "career": {
+    "num": "II.",
+    "title": "Career",
+    "caption": "Combat record",
+    "current": "CURRENT",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "level": "Level"
+  },
+  "skills": {
+    "num": "III.",
+    "title": "Skills",
+    "caption": "Arsenal",
+    "legend": "Familiarity level - 1 to 100",
+    "levelLabel": "Familiarity level"
+  },
+  "about": {
+    "num": "I.",
+    "title": "About",
+    "caption": "Field profile",
+    "locationLabel": "Base",
+    "statusLabel": "Status",
+    "statusValue": "Full-stack with a strong base in data, automation, and performance. Exploring a few AI alternatives and curious about architecture and system design.",
+    "stackLabel": "Skills",
+    "stackItems": [
+      "Python",
+      "Distributed systems",
+      "Data extraction",
+      "Scrapy",
+      "FastAPI",
+      "Django",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Docker",
+      "SQL"
+    ]
+  },
+  "projects": {
+    "num": "IV.",
+    "title": "Projects",
+    "caption": "Production artifacts",
+    "intro": "A selection of public builds and product pieces showing how I organize interfaces, data, and experience so they keep evolving after the first deploy.",
+    "featured": "Featured",
+    "repository": "Repository",
+    "live": "Live",
+    "flipHintHover": "hover",
+    "flipHintTap": "tap",
+    "stack": "Stack",
+    "status": "Status",
+    "year": "Year",
+    "noteTitle": "Private record",
+    "noteBody": "Part of the production work lives in private repositories. This section is ready to receive new deliveries without changing the visual structure."
+  },
+  "certificationsSection": {
+    "num": "VI.",
+    "title": "Certifications",
+    "caption": "Next records",
+    "comingSoon": "Coming soon"
+  },
+  "courses": {
+    "num": "VII.",
+    "title": "Courses",
+    "caption": "Training and studies",
+    "comingSoon": "Coming soon"
+  },
+  "academic": {
+    "num": "V.",
+    "title": "Academic",
+    "caption": "Academy",
+    "progressLabel": "Progress",
+    "statusInProgress": "In progress",
+    "statusCompleted": "Completed",
+    "monthsShort": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ]
+  },
+  "hero": {
+    "expeditionLabel": "EXPEDITION",
+    "titleFirst": "Jonathas",
+    "titleLast": "Oliveira",
+    "alias": "Kaironn",
+    "subtitleLead": "Developing solutions ",
+    "subtitleHighlight": "for those who come after",
+    "rotating": {
+      "one": "Mining some data...",
+      "two": "Writing a few lines...",
+      "three": "Building something fun...",
+      "four": "Translating a few things...",
+      "five": "Playing soulslikes... wait, back to work...",
+      "six": "Rolling 1d20... CRITICAL FAILURE??",
+      "seven": "Rolling 1d20... CRITICAL HIT!!",
+      "eight": "Tomorrow comes..."
+    },
+    "cta": "View projects",
+    "contactCta": "Start a dialogue",
+    "statJourneyLabel": "Journey time",
+    "statJourneyValue": "2+ years",
+    "statProjectsLabel": "Production projects",
+    "statProjectsValue": "2",
+    "statStackLabel": "Current stack",
+    "statStackValue": "Python - TypeScript"
+  },
+  "language": {
+    "toggle": "Change language",
+    "pt": "Portugues",
+    "en": "English"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

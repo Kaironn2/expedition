@@ -1,0 +1,14 @@
+# Enforce LF line endings on all text files (modern cross-platform convention).
+# Avoids "LF will be replaced by CRLF" churn from formatters that write LF on Windows.
+* text=auto eol=lf
+
+# Common binary types - skip line-ending conversion entirely.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
