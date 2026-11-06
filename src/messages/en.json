@@ -84,6 +84,8 @@
     "live": "Live",
     "flipHintHover": "hover",
     "flipHintTap": "tap",
+    "carouselPrevious": "Previous project",
+    "carouselNext": "Next project",
     "stack": "Stack",
     "status": "Status",
     "year": "Year",
