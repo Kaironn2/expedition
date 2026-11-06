@@ -82,7 +82,7 @@ export function ProjectCard({
   flipHintHover,
   flipHintTap,
 }: Props) {
-  const [ref, isInView] = useInView<HTMLLIElement>();
+  const [ref, isInView] = useInView<HTMLDivElement>();
   const isTouch = useIsTouch();
   const [flipped, setFlipped] = useState(false);
 
@@ -111,7 +111,7 @@ export function ProjectCard({
   const flipHint = isTouch ? flipHintTap : flipHintHover;
 
   return (
-    <li
+    <div
       ref={ref}
       className={`${animClass({ isVisible: isInView })} k-pcard-wrap`}
       style={staggerDelay(index, 100)}
@@ -200,6 +200,6 @@ export function ProjectCard({
           </article>
         </div>
       </div>
-    </li>
+    </div>
   );
 }

@@ -3,6 +3,7 @@ import { Section } from "@/components/ui/Section";
 import { projects } from "@/data/projects";
 import type { Locale } from "@/types/portfolio";
 import { ProjectCard } from "./ProjectCard";
+import { ProjectCarousel } from "./ProjectCarousel";
 
 export function Projects() {
   const locale = useLocale() as Locale;
@@ -13,7 +14,7 @@ export function Projects() {
   const flipHintTap = t("flipHintTap");
 
   return (
-    <Section id="projects" className="max-w-[1180px]">
+    <Section id="projects" className="max-w-[1500px]">
       <div className="k-section-heading anim-fade-in is-visible">
         <span className="k-section-num">{t("num")}</span>
         <h2 className="k-section-title">
@@ -23,7 +24,7 @@ export function Projects() {
         <span className="k-section-caption">- {t("caption")}</span>
         <span className="k-section-rule" aria-hidden />
       </div>
-      <ul className="k-projects-grid">
+      <ProjectCarousel previousLabel={t("carouselPrevious")} nextLabel={t("carouselNext")}>
         {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
@@ -36,7 +37,7 @@ export function Projects() {
             flipHintTap={flipHintTap}
           />
         ))}
-      </ul>
+      </ProjectCarousel>
     </Section>
   );
 }

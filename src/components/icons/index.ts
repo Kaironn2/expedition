@@ -1,3 +1,4 @@
+export { CarouselArrowIcon } from "./CarouselArrowIcon";
 export { ExpeditionBadgeIcon } from "./ExpeditionBadgeIcon";
 export { GearIcon } from "./GearIcon";
 export { GitHubIcon } from "./GitHubIcon";

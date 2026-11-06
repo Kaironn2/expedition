@@ -88,7 +88,9 @@
     "noteTitle": "Registro privado",
     "noteBody": "Parte do trabalho em produção fica em repositórios privados. Esta section foi preparada para receber novas entregas sem alterar a estrutura visual.",
     "flipHintHover": "hover",
-    "flipHintTap": "toque"
+    "flipHintTap": "toque",
+    "carouselPrevious": "Projeto anterior",
+    "carouselNext": "Próximo projeto"
   },
   "certificationsSection": {
     "num": "VI.",
