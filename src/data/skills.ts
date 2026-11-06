@@ -58,6 +58,12 @@ export const skillSources: readonly SkillSource[] = [
     year: "2025",
   },
   { id: "icosa", name: { pt: "Icosa", en: "Icosa" }, kind: "proj", year: "2025" },
+  {
+    id: "maid-cafe",
+    name: { pt: "Maid Café Localização PT-BR", en: "Maid Café Localization PT-BR" },
+    kind: "proj",
+    year: "2026",
+  },
   { id: "study", name: { pt: "Estudos pessoais", en: "Personal study" }, kind: "study" },
 ];
 
@@ -357,13 +363,32 @@ export const skillCategories: readonly SkillCategory[] = [
       },
       {
         name: "Go",
-        tier: 1,
+        tier: 2,
         since: "2026-08",
         description: {
-          pt: "Estudos da linguagem para serviços backend.",
-          en: "Studying the language for backend services.",
+          pt: "Ferramentas de linha de comando em projeto próprio e estudos para serviços backend.",
+          en: "Command-line tooling in a personal project, plus study for backend services.",
         },
-        uses: [{ source: "study" }],
+        uses: [
+          {
+            source: "maid-cafe",
+            note: {
+              pt: "Ferramenta que extrai, sincroniza e aplica a tradução.",
+              en: "Tool that extracts, syncs, and applies the translation.",
+            },
+            details: [
+              {
+                pt: "Patch binário de resources.assets e global-metadata.dat",
+                en: "Binary patching of resources.assets and global-metadata.dat",
+              },
+              {
+                pt: "Instalador para Windows, Linux e macOS com a tradução embutida",
+                en: "Windows, Linux, and macOS installer with the translation embedded",
+              },
+            ],
+          },
+          { source: "study" },
+        ],
       },
     ],
   },
