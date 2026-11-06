@@ -5,6 +5,7 @@ import { ExpeditionBadgeIcon } from "@/components/icons/ExpeditionBadgeIcon";
 import { GitHubIcon } from "@/components/icons/GitHubIcon";
 import { IcosaIcon } from "@/components/icons/IcosaIcon";
 import { LuneGlyphIcon } from "@/components/icons/LuneGlyphIcon";
+import { MaidCafeIcon } from "@/components/icons/MaidCafeIcon";
 import { NexusIcon } from "@/components/icons/NexusIcon";
 import { useInView } from "@/hooks/useInView";
 import { useIsTouch } from "@/hooks/useIsTouch";
@@ -26,6 +27,9 @@ interface Props {
 function ProjectGlyph({ project }: { readonly project: Project }) {
   if (project.iconKind === "icosa") {
     return <IcosaIcon className="k-pcard-glyph-svg" />;
+  }
+  if (project.iconKind === "maid-cafe") {
+    return <MaidCafeIcon className="k-pcard-glyph-svg" />;
   }
   if (project.iconKind === "lune-glyph") {
     return <LuneGlyphIcon className="k-pcard-glyph-svg" />;

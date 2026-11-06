@@ -69,7 +69,7 @@ export interface AcademicRecord {
   readonly period: AcademicPeriod;
 }
 
-export type ProjectIconKind = "expedition-33" | "icosa" | "lune-glyph";
+export type ProjectIconKind = "expedition-33" | "icosa" | "lune-glyph" | "maid-cafe";
 
 export type ProjectLinkKind = "github" | "nexus";
 

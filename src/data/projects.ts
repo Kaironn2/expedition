@@ -62,6 +62,27 @@ export const projects: readonly Project[] = [
     ],
   },
   {
+    id: "proj-maid-cafe",
+    name: {
+      pt: "Maid Café Localização PT-BR",
+      en: "Maid Café Localization PT-BR",
+    },
+    iconKind: "maid-cafe",
+    summary: {
+      pt: "Tradução de fã de Maid Cafe on Electric Street, com ferramenta própria em Go.",
+      en: "Fan translation of Maid Cafe on Electric Street, with a custom Go tool.",
+    },
+    longSummary: {
+      pt: "Mais de 11 mil textos traduzidos direto nos assets do jogo, sem mod loader. A ferramenta em Go extrai, sincroniza e aplica a tradução, e o instalador encontra o jogo na Steam no Windows, Linux e macOS.",
+      en: "Over 11k texts translated directly in the game's assets, with no mod loader. The Go tool extracts, syncs, and applies the translation, and the installer finds the game on Steam across Windows, Linux, and macOS.",
+    },
+    stack: ["Go", "Unity", "IL2CPP", "JavaScript", "GitHub Actions"],
+    links: [
+      { kind: "github", url: "https://github.com/Kaironn2/maid-cafe-loc" },
+      { kind: "nexus", url: "https://www.nexusmods.com/maidcafeonelectricstreet/mods/1" },
+    ],
+  },
+  {
     id: "proj-secret",
     name: {
       pt: "Em breve",
